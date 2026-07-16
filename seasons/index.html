@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+ <meta charset="UTF-8">
+ <title>Пори року</title>
+ <!-- Підключаємо зовнішній файл стилів -->
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <h1 id="zagolovok">Літо</h1>
+
+ <img id="kartinka" src="lito.webp" alt="Літо">
+
+ <p id="tekst">Літо — найтепліша пора року. У цей час дуже спекотно, світить яскраве сонце і всі відпочивають на
+  канікулах.</p>
+
+ <div class="buttons">
+  <button onclick="pokazatyVesnu()"> Весна</button>
+  <button onclick="pokazatyLito()"> Літо</button>
+  <button onclick="pokazatyOsin()"> Осінь</button>
+  <button onclick="pokazatyZymu()"> Зима</button>
+ </div>
+
+ <script>
+  function pokazatyVesnu() {
+   document.getElementById("zagolovok").innerText = "Весна";
+   document.getElementById("tekst").innerText = "Весна — це час, коли природа прокидається від зимового сну. З'являється перша зелена трава та починають цвісти гарні квіти.";
+   document.getElementById("kartinka").src = "wesna.jpg";
+   document.body.style.backgroundColor = "#d4edda";
+  }
+
+  function pokazatyLito() {
+   document.getElementById("zagolovok").innerText = "Літо";
+   document.getElementById("tekst").innerText = "Літо — найтепліша пора року. У цей час дуже спекотно, світить яскраве сонце і всі відпочивають на канікулах.";
+   document.getElementById("kartinka").src = "lito.webp";
+   document.body.style.backgroundColor = "#fff9db";
+  }
+
+  function pokazatyOsin() {
+   document.getElementById("zagolovok").innerText = "Осінь";
+   document.getElementById("tekst").innerText = "Осінь — золота пора року, коли листя на деревах стає жовтим та червоним. Часто йдуть дощі, а птахи відлітають у теплі краї.";
+   document.getElementById("kartinka").src = "osin.jpg";
+   document.body.style.backgroundColor = "#ffe8cc";
+  }
+
+  function pokazatyZymu() {
+   document.getElementById("zagolovok").innerText = "Зима";
+   document.getElementById("tekst").innerText = "Зима — найхолодніша пора року, коли все навколо вкривається білим снігом. Діти ліплять сніговиків та святкують Новий рік.";
+   document.getElementById("kartinka").src = "zima.jpg";
+   document.body.style.backgroundColor = "#e3fafc";
+  }
+ </script>
+
+</body>
+
+</html>
